@@ -10930,10 +10930,10 @@ header.masthead {
   font-family: "Tajawal", "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
-  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../assets/img/date.jpg");
+  background: url("../assets/img/date.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: scroll;
+  background-attachment: local;
   background-size: cover;
 }
 header.masthead h1, header.masthead .h1 {
@@ -10956,6 +10956,14 @@ header.masthead h1, header.masthead .h1 {
 @media (min-width: 1200px) {
   header.masthead h1, header.masthead .h1 {
     font-size: 3.5rem;
+  }
+}
+@media (min-height: 450px) {
+  header.masthead {
+    padding-top: 35rem !important;
+  }
+  #about {
+    padding: 2rem 0;
   }
 }
 
